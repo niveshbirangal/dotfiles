@@ -1,4 +1,10 @@
 local version = vim.version()
+
+math.randomseed(os.time())
+local function pick_color()
+  local colors = { "String", "Identifier", "Keyword", "Number" }
+  return colors[math.random(#colors)]
+end
 return {
 
   "goolord/alpha-nvim",
@@ -43,9 +49,11 @@ return {
       "                        .-:mNdhh:.......--::::-`                    ",
       "                           yNh/..------..`                          ",
       "                                                                    ",
-      "N E O V I M - v " .. version.major .. "." .. version.minor,
+      "                         N E O V I M - v " .. version.major .. "." .. version.minor,
       "",
     }
+    dashboard.section.header.opts.hl = pick_color()
+
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
@@ -53,7 +61,7 @@ return {
       dashboard.button("SPC ff", "󰱼 > Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
-      dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
+      -- dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
     }
 
     -- Send config to alpha
