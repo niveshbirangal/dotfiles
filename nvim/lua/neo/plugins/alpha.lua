@@ -52,9 +52,9 @@ return {
       "                         N E O V I M - v " .. version.major .. "." .. version.minor,
       "",
     }
-    dashboard.section.header.opts.hl = pick_color()
 
     -- Set menu
+    dashboard.section.header.opts.hl = pick_color()
     dashboard.section.buttons.val = {
       dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
       dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
