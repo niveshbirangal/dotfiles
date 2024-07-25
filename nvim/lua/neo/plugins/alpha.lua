@@ -5,6 +5,7 @@ local function pick_color()
   local colors = { "String", "Identifier", "Keyword", "Number" }
   return colors[math.random(#colors)]
 end
+
 return {
 
   "goolord/alpha-nvim",
@@ -63,10 +64,26 @@ return {
       dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
       -- dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
     }
+    -- end of set menu
+
+    -- hide tabline when entering
+    vim.api.nvim_create_autocmd("User", {
+      pattern = "AlphaReady",
+      callback = function()
+        vim.opt.showtabline = 0
+      end,
+    })
+
+    vim.api.nvim_create_autocmd("BufUnload", {
+      buffer = 0,
+      callback = function()
+        vim.opt.showtabline = 2
+      end,
+    })
+    -- end of hide tableine when entering
 
     -- Send config to alpha
     alpha.setup(dashboard.opts)
-
     -- Disable folding on alpha buffer
     vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
   end,
