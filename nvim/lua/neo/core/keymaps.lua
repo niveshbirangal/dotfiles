@@ -27,10 +27,6 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
--- shortcuts
--- keymap.set("i", "clog", "console.log()")
--- keymap.set("i", "CL", "console.log()<ESC>j", { desc = "console.log shortcut" })
-
 -- source lua file
 keymap.set("n", "<leader><CR>", "<cmd>so ~/.config/nvim/init.lua<CR>", { desc = "source init.lua" }) -- source init.lua
 
