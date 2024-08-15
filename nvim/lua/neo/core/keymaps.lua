@@ -5,6 +5,7 @@ local keymap = vim.keymap -- for conciseness
 
 --jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", "<cmd>:nohl<CR>", { desc = "Clear search highlights" })
@@ -39,3 +40,5 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- select text and move up
 
 -- save
 keymap.set("n", "<leader>ww", "<cmd>w<CR>", { desc = "save current file" }) -- save current file
+keymap.set("n", "<leader>wq", "<cmd>wq<CR>", { desc = "save and quit current file" })
+keymap.set("n", "<leader>qq", "<cmd>q!<CR>", { desc = "quit without saving" })
