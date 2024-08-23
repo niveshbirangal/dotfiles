@@ -37,8 +37,10 @@ keymap.set("v", "leader<p>", "_dP")
 -- experimental
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- select text and move down
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- select text and move up
+keymap.set("n", "<leader>sa", "<cmd>e<CR>", { desc = "reload" })
 
 -- save
 keymap.set("n", "<leader>ww", "<cmd>w<CR>", { desc = "save current file" }) -- save current file
 keymap.set("n", "<leader>wq", "<cmd>wq<CR>", { desc = "save and quit current file" })
 keymap.set("n", "<leader>qq", "<cmd>q!<CR>", { desc = "quit without saving" })
+keymap.set("n", "<leader>qa", "<cmd>qa!<CR>", { desc = "quit all without saving" })
