@@ -26,11 +26,11 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-
         "bashls",
         "clangd",
         "clangd",
-        "tsserver",
+        -- "tsserver",
+        "ts_ls",
         "html",
         "cssls",
         "somesass_ls",
