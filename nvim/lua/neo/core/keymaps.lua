@@ -50,6 +50,6 @@ keymap.set("n", "<leader>qa", "<cmd>qa!<CR>", { desc = "quit all without saving"
 keymap.set("n", "<leader>wn", "<cmd>noa w<CR>", { desc = "save without format" })
 
 -- latex
-keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>", { desc = "latex compile" })
-keymap.set("n", "<leader>ls", "<cmd>VimtexStop<CR>", { desc = "latex stop" })
-keymap.set("n", "<leader>lc", "<cmd>VimtexClean<CR>", { desc = "latex clean" })
+keymap.set("n", "<leader>cl", "<cmd>VimtexCompile<CR>", { desc = "latex compile" })
+keymap.set("n", "<leader>cs", "<cmd>VimtexStop<CR>", { desc = "latex stop" })
+keymap.set("n", "<leader>cc", "<cmd>VimtexClean<CR>", { desc = "latex clean" })
