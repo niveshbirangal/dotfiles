@@ -26,7 +26,10 @@ keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- o
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
-keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current buffer in new tab" }) --  move current buffer to new tab
+keymap.set("n", "<leader>tm", "<cmd>tabmove <CR>", { desc = "move tab" })
+keymap.set("n", "<leader>ta", "<cmd>tabfirst <CR>", { desc = "first tab" })
+keymap.set("n", "<leader>tz", "<cmd>tablast <CR>", { desc = "last tab" })
 
 -- source lua file
 keymap.set("n", "<leader><CR>", "<cmd>so ~/.config/nvim/init.lua<CR>", { desc = "source init.lua" }) -- source init.lua
@@ -44,3 +47,9 @@ keymap.set("n", "<leader>ww", "<cmd>w<CR>", { desc = "save current file" }) -- s
 keymap.set("n", "<leader>wq", "<cmd>wq<CR>", { desc = "save and quit current file" })
 keymap.set("n", "<leader>qq", "<cmd>q!<CR>", { desc = "quit without saving" })
 keymap.set("n", "<leader>qa", "<cmd>qa!<CR>", { desc = "quit all without saving" })
+keymap.set("n", "<leader>wn", "<cmd>noa w<CR>", { desc = "save without format" })
+
+-- latex
+keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>", { desc = "latex compile" })
+keymap.set("n", "<leader>ls", "<cmd>VimtexStop<CR>", { desc = "latex stop" })
+keymap.set("n", "<leader>lc", "<cmd>VimtexClean<CR>", { desc = "latex clean" })
