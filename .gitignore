@@ -255,5 +255,5 @@ fabric.properties
 #EXTRA LUA
 tags
 zsh/cache
-nvim/lazy-lock.json
+# nvim/lazy-lock.json
 
