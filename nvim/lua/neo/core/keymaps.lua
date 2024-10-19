@@ -53,3 +53,6 @@ keymap.set("n", "<leader>wn", "<cmd>noa w<CR>", { desc = "save without format" }
 keymap.set("n", "<leader>cl", "<cmd>VimtexCompile<CR>", { desc = "latex compile" })
 keymap.set("n", "<leader>cs", "<cmd>VimtexStop<CR>", { desc = "latex stop" })
 keymap.set("n", "<leader>cc", "<cmd>VimtexClean<CR>", { desc = "latex clean" })
+
+-- markdown
+-- keymap.set("n", "<leader>mt", "<cmd>RederMarkdown toggle<CR>", { desc = "render markdown" })
