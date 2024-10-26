@@ -1,0 +1,10 @@
+{
+  "Inline Math": {
+    "prefix": "mk",
+    "body": "\\$$0\\$"
+  },
+  "Display Math": {
+    "prefix": "dm",
+    "body": ["\\$\\$", "$0", "\\$\\$"]
+  }
+}
