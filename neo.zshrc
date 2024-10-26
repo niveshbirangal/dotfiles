@@ -329,6 +329,7 @@ alias ga="git add"
 alias lg="lazygit"
 alias gg="git log --graph --decorate"
 alias gl="git log --oneline --decorate --graph --parents"
+alias gd="git diff"
 
 # cd
 alias cd=' cd'
