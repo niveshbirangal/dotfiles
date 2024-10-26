@@ -3,6 +3,6 @@ return {
   config = function()
     vim.g.VM_maps["Find Under"] = "<C-d>"
     vim.g.VM_maps["Find Subword Under"] = "<C-d>"
-    vim.g.theme = "codedark"
+    -- vim.g.theme = "codedark"
   end,
 }
