@@ -9,6 +9,8 @@ return {
 
     -- vim.g.vimtex_quickfix_latexlog = {}
     vim.g.vimtex_quickfix_open_on_warning = 0
+    vim.g.vimtex_quickfix_enabled = 0
+    -- vim.g.vimtex_quickfix_ignore_all_warnings = 0
   end,
 }
 
