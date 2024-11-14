@@ -7,13 +7,11 @@ return {
     -- vim.g.vimtex_compiler_method = "pdftex"
     vim.g.vimtex_view_method = "skim"
 
-    -- vim.g.vimtex_quickfix_latexlog = {}
+    -- for logs
     vim.g.vimtex_quickfix_open_on_warning = 0
-    vim.g.vimtex_quickfix_enabled = 0
-    -- vim.g.vimtex_quickfix_ignore_all_warnings = 0
+    -- vim.g.vimtex_quickfix_enabled = 0
   end,
 }
-
 -- skim
 -- alias skim='/Applications/Skim.app/Contents/MacOS/Skim'
 -- in skim preferences -> sync -> preset = custom, command = nvim,

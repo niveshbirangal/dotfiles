@@ -3,8 +3,38 @@
     "prefix": "mk",
     "body": "\\$$0\\$"
   },
+  "displayed math mode": {
+    "prefix": "nn",
+    "body": "\\$$$0\\$$"
+  },
   "Display Math": {
     "prefix": "dm",
     "body": ["\\$\\$", "$0", "\\$\\$"]
+  },
+  "L dots": {
+    "prefix": "ld",
+    "body": "\\ldots"
+  },
+  "alpha": {
+    "prefix": "al",
+    "body": "\\alpha"
+  },
+  "fraction": {
+    "prefix": "fr",
+    "body": "\\frac{$0}{}"
+  },
+
+  "display fraction": {
+    "prefix": "fr",
+    "body": "\\dfrac{$0}{}"
+  },
+
+  "square root": {
+    "prefix": "sq",
+    "body": "\\sqrt{$0}"
+  },
+  "n root": {
+    "prefix": "sq",
+    "body": "\\sqrt[]{$0}"
   }
 }

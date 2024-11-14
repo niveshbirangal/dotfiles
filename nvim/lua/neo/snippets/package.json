@@ -12,6 +12,10 @@
       {
         "language": "tex",
         "path": "./latex.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./javascript.json"
       }
     ]
   }

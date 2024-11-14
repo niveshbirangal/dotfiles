@@ -50,7 +50,8 @@ keymap.set("n", "<leader>qa", "<cmd>qa!<CR>", { desc = "quit all without saving"
 keymap.set("n", "<leader>wn", "<cmd>noa w<CR>", { desc = "save without format" })
 
 -- latex
-keymap.set("n", "<leader>ms", "<cmd>VimtexStop<CR>", { desc = "latex compile toggle" })
+keymap.set("n", "<leader>mm", "<cmd>VimtexCompile<CR>", { desc = "latex compile" })
+keymap.set("n", "<leader>ms", "<cmd>VimtexStop<CR>", { desc = "latex stop" })
 keymap.set("n", "<leader>mc", "<cmd>VimtexClean<CR>", { desc = "latex clean" })
 
 -- markdown
