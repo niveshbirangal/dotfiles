@@ -330,6 +330,7 @@ alias lg="lazygit"
 alias gg="git log --graph --decorate"
 alias gl="git log --oneline --decorate --graph --parents"
 alias gd="git diff"
+alias gc="git commit -m"
 
 # cd
 alias cd=' cd'
@@ -347,6 +348,9 @@ alias l="ls"
 # kill 
 alias k9='kill -9'
 alias e="exit"
+
+# c
+alias cc="gcc"
 
 # grep
 alias egrep="egrep --color=auto"
