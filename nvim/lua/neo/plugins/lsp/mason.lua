@@ -28,20 +28,23 @@ return {
       ensure_installed = {
         "bashls",
         "clangd",
-        "clangd",
-        -- "tsserver",
-        "ts_ls",
+        "rust_analyzer",
+        "gopls",
+
         "html",
         "cssls",
         "somesass_ls",
-
         "tailwindcss",
+
+        "ts_ls",
         "lua_ls",
         "graphql",
         "emmet_ls",
         "prismals",
         "pyright",
         "sqlls",
+
+        "texlab",
       },
     })
     mason_tool_installer.setup({

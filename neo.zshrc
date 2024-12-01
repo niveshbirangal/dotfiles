@@ -344,6 +344,9 @@ alias desk="cd ~/Desktop/; ls"
 alias doc="cd ~/Documents/; ls"
 alias gf="cd ~/Documents/github; ls"
 alias l="ls"
+alias p="pwd"
+alias t="touch"
+
 
 # kill 
 alias k9='kill -9'
