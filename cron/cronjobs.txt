@@ -1,5 +1,3 @@
-# use
-0 * * * * (/Users/niveshbirangal/Documents/github/dotfiles/cron/backup.sh) >> /Users/niveshbirangal/Downloads/backup.log 2>&1
+0 * * * * (/Users/niveshbirangal/Documents/github/dotfiles/cron/backup.sh) >> /Volumes/neo-nas/backups/logs/backup.log 2>&1
 
-# 0 * * * * (/Users/niveshbirangal/Documents/github/dotfiles/cron/timestamp.sh && /Users/niveshbirangal/Documents/github/dotfiles/cron/backup.sh) >> /Users/niveshbirangal/Downloads/backup.log 2>&1
 
