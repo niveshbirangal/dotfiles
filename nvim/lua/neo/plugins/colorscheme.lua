@@ -1,5 +1,4 @@
 -- vim.api.nvim_set_hl(0, "BufferLineFill", { bg = "#323232" })
-vim.api.nvim_set_hl(0, "TabLineFill", { bg = "none" }) -- breaking changes neovim 0.11
 
 return {
   "folke/tokyonight.nvim",
@@ -39,5 +38,6 @@ return {
     })
 
     vim.cmd("colorscheme tokyonight")
+    vim.api.nvim_set_hl(0, "TabLineFill", { bg = "none" }) -- breaking changes neovim 0.11
   end,
 }
