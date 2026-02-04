@@ -571,6 +571,8 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
-# Others 
+# Project scope 
 env.lua
+package-lock.json
+
 
