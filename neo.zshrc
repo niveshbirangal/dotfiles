@@ -332,8 +332,9 @@ alias lg="lazygit"
 alias gg="git log --graph --decorate"
 alias gl="git log --oneline --decorate --graph --parents"
 alias gd="git diff"
-alias gc="git commit -m"
+alias gcm="git commit -m"
 alias gp="git push"
+alias gpr='git pull --rebase origin main'
 
 # cd
 alias cd=' cd'
@@ -371,6 +372,14 @@ alias bl="brew list"
 
 # tmux 
 # alias tneo="tmux attatch -t"
+
+# python 
+alias p3="python3"
+
+#node 
+alias no="node"
+
+
 
 # extra
 alias nls="ls -1|wc -l" #number of files in a dir
@@ -420,3 +429,5 @@ alias skim='/Applications/Skim.app/Contents/MacOS/Skim'
 # unset __conda_setup
 # <<< conda initialize <<<
 
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
