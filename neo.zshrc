@@ -4,6 +4,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# pyenv
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+export PYENV_ROOT="$HOME/.pyenv"
+
 
 # export PATH="/home/niveshbirangal/miniconda/bin:$PATH"
 
@@ -379,6 +383,9 @@ alias p3="python3"
 #node 
 alias no="node"
 
+#cron
+alias cte="crontab -e" # open cron editor
+alias ctl="crontab -l" # list cron jobs
 
 
 # extra
@@ -431,3 +438,5 @@ alias skim='/Applications/Skim.app/Contents/MacOS/Skim'
 
 # source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
