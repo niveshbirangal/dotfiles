@@ -1,5 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  -- lazy = false,
+  branch = "main",
   event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
@@ -7,10 +9,11 @@ return {
   },
   config = function()
     -- import nvim-treesitter plugin
-    local treesitter = require("nvim-treesitter.configs")
+    local treesitter = require("nvim-treesitter.config")
 
     -- configure treesitter
     treesitter.setup({ -- enable syntax highlighting
+
       highlight = {
         enable = true,
       },
@@ -22,33 +25,35 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
-        --   "asm",
-        --   "bash",
-        --   "cmake",
-        --   "cpp",
-        --   "json",
-        --   "javascript",
-        --   "typescript",
-        --   "tsx",
-        --   "yaml",
-        --   "html",
-        --   "css",
-        --   "csv",
-        --   "prisma",
-        --   "python",
-        --   "markdown",
-        --   "markdown_inline",
-        --   "svelte",
-        --   "graphql",
-        --   "bash",
-        --   "lua",
-        --   "vim",
-        --   "dockerfile",
-        --   "gitignore",
-        --   "query",
-        --   "vimdoc",
-        --   "c",
+        "asm",
+        "cmake",
+        "cpp",
+        "json",
+        "javascript",
+        "typescript",
+        "tsx",
+        "yaml",
+        "html",
+        "css",
+        "csv",
+        "prisma",
+        "python",
+        "markdown",
+        "markdown_inline",
+        "svelte",
+        "graphql",
+        "bash",
+        "lua",
+        "vim",
+        "dockerfile",
+        "gitignore",
+        "query",
+        "vimdoc",
+        "c",
       },
+
+      auto_install = true,
+      -- :TSInstall javascript typescript tsx
       incremental_selection = {
         enable = true,
         keymaps = {
