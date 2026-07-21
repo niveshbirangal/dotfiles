@@ -20,7 +20,10 @@ return {
         enable = true,
       },
       -- enable indentation
-      indent = { enable = true },
+      indent = {
+        enable = false,
+        -- Disabled because Treesitter indentation caused Enter/newline
+      },
       -- enable autotagging (w/ nvim-ts-autotag plugin)
       autotag = {
         enable = true,
